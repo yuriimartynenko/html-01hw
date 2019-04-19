@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,66 @@
     <title>Form document</title>
 </head>
 <body>
-    
+    <a href="/index.html">Назад на index.html</a>
+    <form action="https://formspree.io/ymartinenko4@gmail.com" method="POST">
+        <ol>
+            <fieldset>
+                <legend>Персональна інформація:</legend>
+                <label>Ваше ім'я:<br>
+                    <input type="text" name="firstname" placeholder="Введіть ім'я" autofocus><br></label>
+                <label>Ваше прізвище:<br>
+                    <input type="text" name="lastname" value="Трамп"><br></label>
+                <label>Ваш email:<br>
+                    <input type="email" name="email" placeholder="Введіть email"><br><br></label>
+            </fieldset>
+            <div>
+                <b><p><li>Які вимоги є обов'язковими для дороги, позначеної знаком «Автомагістраль»?</li></p></b>
+                <input type="radio" name="test1" value="1" id="1"><label for="1"> Відсутність перетинів на одному рівні з іншими дорогами, залізничними або трамвайними коліями, пішохідними чи велосипедними доріжками.</label><br>
+                <input type="radio" name="test1" value="2" id="2"><label for="2"> Наявність не менше шести смуг для руху в кожному напрямку.</label><br>
+                <input type="radio" name="test1" value="3" id="3"><label for="3"> Наявність розділювальної смуги.</label><br>
+                <input type="radio" name="test1" value="4" id="4"><label for="4"> Відповіді, зазначені в пунктах 1 і 3.</label>
+            </div>
+            <div>
+                <b><p><li>Автомобільна дорога, вулиця (дорога) — це частина території, в тому числі в населеному пункті, призначена для руху:</li></p></b>
+                <img src="https://roadrules.com.ua/pdr-testi/images/574d2f2ea8b0e.jpg" alt="Автомобільна дорога"><br>
+                <input type="radio" name="test2" value="5" id="5"> <label for="5">Тільки вантажних і легкових автомобілів.</label><br>
+                <input type="radio" name="test2" value="6" id="6"> <label for="6">Тільки механічних транспортних засобів.</label><br>
+                <input type="radio" name="test2" value="7" id="7"> <label for="7">Транспортних засобів і пішоходів.</label>
+            </div>
+            <div>
+                <b><p><li>Велосипедною доріжкою вважається виконана в межах дороги чи поза нею доріжка з покриттям, що призначена для руху на велосипедах і позначена:</li></p></b>
+                <img src="/img.png" alt="Автомобільна дорога"><br>
+                <input type="checkbox" name="test3" value="8" id="8"> <label for="8">Дорожнім знаком 4.12.</label><br>
+                <input type="checkbox" name="test3" value="9" id="9"><label for="9"> Дорожнім знаком 1.34.</label><br>
+                <input type="checkbox" name="test3" value="10" id="10"><label for="10"> Дорожнім знаком 3.8.</label>
+            </div>
+            <div>
+        <b><li><p>В якому з перелічених випадків водій здійснив вимушену зупинку?</p></li></b>
+        <select name="select_one">
+          <option selected="selected">Вибиріть правильну відповідь</option>
+          <option>Зупинився на узбіччі через прокол колеса.</option>
+          <option>Зупинився на смузі руху через засліплення фарами зустрічного автомобіля.</option>
+          <option>Зупинився, щоб надати допомогу пасажиру.</option>
+          <option>Відповіді 1,2,3.</option>
+        </select>
+            </div>
+            <div>
+        <b><li><p>До маршрутних транспортних засобів (транспортних засобів загального користування) належать:</p></li></b>
+        <select name="select_two" size="5">
+          <option selected="selected">Вибиріть правильну відповідь</option>
+          <option>Трамваї, тролейбуси, автобуси, метрополітен.</option>
+          <option>Транспортні засоби з кількістю місць для сидіння не менш ніж сімнадцять з місцем водія включно, що рухаються за встановленими маршрутами та мають визначені місця на дорозі для посадки.</option>
+          <option>Автобуси, мікроавтобуси, тролейбуси, трамваї і таксі, що рухаються за встановленими маршрутами та мають певні місця на дорозі для посадки (висадки) пасажирів.</option>
+          <option disabled>Щось інше(заблоковано для вибору)</option>
+        </select>
+            </div>
+        <div>
+            <b><li><p>Дата складання іспиту:</p></li></b>
+            <input type="date" name="date" min="2019-04-01"><br>
+        </div>
+        </ol>
+        <center><input type="submit" value="Відправити"> <input type="reset" value="Скинути"></center>
+        <br>
+    </form>
 </body>
 </html>
